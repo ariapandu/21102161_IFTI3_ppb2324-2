@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Bloc/contact_cubit.dart';
-import 'package:flutter_application_1/views/add_contact_screen.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../bloc/contact_cubit.dart';
+import '../bloc/contact_state.dart';
+import 'add_contact_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -70,9 +72,9 @@ class HomeScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => const AddContactScreen()));
+            context,
+            MaterialPageRoute(builder: (context) => const AddContactScreen()),
+          );
         },
         child: const Icon(Icons.add),
       ),

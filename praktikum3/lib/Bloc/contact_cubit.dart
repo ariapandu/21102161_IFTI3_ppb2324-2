@@ -1,8 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:equatable/equatable.dart';
-import 'package:meta/meta.dart';
 import '../../model/user.dart';
-part 'contact_state.dart';
+import 'contact_state.dart';
 
 class ContactCubit extends Cubit<ContactState> {
   ContactCubit() : super(ContactInitial());
@@ -13,7 +11,8 @@ class ContactCubit extends Cubit<ContactState> {
     emit(ContactInitial());
     user.add(User(name: username, number: number));
     emit(ContactLoading());
-    Future.delayed(const Duration(seconds: 3), () => emit(ContactLoaded(user: user)));
+    Future.delayed(
+        const Duration(seconds: 3), () => emit(ContactLoaded(user: user)));
   }
 
   void removeUser({required int index}) {
@@ -26,4 +25,3 @@ class ContactCubit extends Cubit<ContactState> {
     }
   }
 }
-

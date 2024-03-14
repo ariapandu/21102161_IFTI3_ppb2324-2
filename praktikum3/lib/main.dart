@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Bloc/contact_cubit.dart';
-import 'package:flutter_application_1/views/home_screen.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import 'bloc/contact_cubit.dart';
+import 'views/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
