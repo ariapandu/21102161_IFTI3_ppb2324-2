@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/second_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -11,7 +12,15 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
         child: ElevatedButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const SecondPage(),
+        ),
+        
+      );
+          },
           child: const Text('Menuju halaman kedua'),
         ),
       ),
