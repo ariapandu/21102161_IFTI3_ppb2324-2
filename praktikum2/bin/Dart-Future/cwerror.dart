@@ -4,8 +4,8 @@ import 'dart:async';
 Future<String> getProduct() {
   return Future.delayed(Duration(seconds: 3), () {
     var isProductAvailable = false;
+    // ignore: dead_code
     if (isProductAvailable) {
-      return 'Coffee Boba';
     } else {
       throw 'Our stock is not enough.';
     }

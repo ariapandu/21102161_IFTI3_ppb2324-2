@@ -5,8 +5,8 @@ Future<String> getProduct() {
     var isProductAvailable = true; // Ubah ke true agar tidak terjadi error
     if (isProductAvailable) {
       return 'Matcha Latte';
+    // ignore: dead_code
     } else {
-      throw 'Our stock is not enough.';
     }
   });
 }
