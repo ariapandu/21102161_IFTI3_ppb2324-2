@@ -14,7 +14,6 @@ class Meong extends Hewan {
       berat += 0.2;
   }
 
-  @override
   void tidur() {
     print('$nama sedang tidur.');
   }  

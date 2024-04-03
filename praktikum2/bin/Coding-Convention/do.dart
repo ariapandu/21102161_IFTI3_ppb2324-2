@@ -14,7 +14,7 @@ class Meong extends Mammal with Walkable {}
 
 void main() {
   // 1. DO name type using UpperCamelCase
-  var instance;
+  // ignore: unused_local_variable
   var mInstance; // Bad
 
   // 2. DO use ?? to convert null to a boolean value

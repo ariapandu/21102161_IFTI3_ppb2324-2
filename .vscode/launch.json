@@ -1,0 +1,114 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "praktikum1",
+            "cwd": "praktikum1",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "praktikum1 (profile mode)",
+            "cwd": "praktikum1",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "praktikum1 (release mode)",
+            "cwd": "praktikum1",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "praktikum2",
+            "cwd": "praktikum2",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "praktikum3",
+            "cwd": "praktikum3",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "praktikum3 (profile mode)",
+            "cwd": "praktikum3",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "praktikum3 (release mode)",
+            "cwd": "praktikum3",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "praktikum4",
+            "cwd": "praktikum4",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "praktikum4 (profile mode)",
+            "cwd": "praktikum4",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "praktikum4 (release mode)",
+            "cwd": "praktikum4",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "praktikum5",
+            "cwd": "praktikum5",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "praktikum5 (profile mode)",
+            "cwd": "praktikum5",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "praktikum5 (release mode)",
+            "cwd": "praktikum5",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "praktikum6",
+            "cwd": "praktikum6",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "praktikum6 (profile mode)",
+            "cwd": "praktikum6",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "praktikum6 (release mode)",
+            "cwd": "praktikum6",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
