@@ -1,12 +1,10 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:praktikum6/pages/home/home_page.dart';
-import 'package:praktikum6/pages/portofolio/portofolio.page.dart';
-import 'package:praktikum6/pages/profile/profile.dart';
-import 'package:praktikum6/pages/styles/text_styles.dart';
+import 'package:praktikum6/pages/portfolio/portfolio_page.dart';
+import 'package:praktikum6/pages/profile/profile_page.dart';
 import 'package:praktikum6/pages/support/support_page.dart';
-import 'package:praktikum6/styles/color.dart';
+import 'package:praktikum6/styles/colors.dart';
+import 'package:praktikum6/styles/text_style.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -65,28 +63,28 @@ class _MainPageState extends State<MainPage> {
           items: [
             BottomNavigationBarItem(
                 icon: Image.asset(
-                  'assets/icons/home.png',
+                  'assets/icon/home.png',
                   width: 24,
                   color: _selectedIndex == 0 ? kBlueRibbon : kDarkGray,
                 ),
                 label: 'Home'),
             BottomNavigationBarItem(
                 icon: Image.asset(
-                  'assets/icons/portofolio.png',
+                  'assets/icon/portofilo.png',
                   width: 24,
                   color: _selectedIndex == 1 ? kBlueRibbon : kDarkGray,
                 ),
                 label: 'Portfolio'),
             BottomNavigationBarItem(
                 icon: Image.asset(
-                  'assets/icons/Support.png',
+                  'assets/icon/Support.png',
                   width: 24,
                   color: _selectedIndex == 2 ? kBlueRibbon : kDarkGray,
                 ),
                 label: 'Support'),
             BottomNavigationBarItem(
                 icon: Image.asset(
-                  'assets/icons/Profile.png',
+                  'assets/icon/Profile.png',
                   width: 24,
                   color: _selectedIndex == 3 ? kBlueRibbon : kDarkGray,
                 ),

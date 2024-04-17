@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:praktikum6/pages/support/main_page.dart';
-import 'package:praktikum6/pages/support/on_boarding_page.dart';
+import 'package:praktikum6/pages/main_page.dart';
+import 'package:praktikum6/pages/on_boarding_page.dart';
 
 void main() {
   runApp(const MyApp());
