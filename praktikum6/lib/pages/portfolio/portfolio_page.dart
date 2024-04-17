@@ -201,7 +201,7 @@ class PortfolioPage extends StatelessWidget {
                 Spacer(),
                 Align(
                   alignment: Alignment.bottomRight,
-                  child: Text(
+                  child: Text( 
                     time,
                     style: kCaption.copyWith(
                       color: kLightGray,
