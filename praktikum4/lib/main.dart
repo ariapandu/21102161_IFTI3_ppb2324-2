@@ -154,7 +154,7 @@ class MyApp extends StatelessWidget {
                     SizedBox(
                       height: 15,
                     ),
-                    Row(
+                    Row( 
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text("Laporkan Masalah"),
