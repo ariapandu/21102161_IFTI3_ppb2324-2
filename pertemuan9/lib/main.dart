@@ -4,9 +4,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pertemuan9/bloc/login/login_cubit.dart';
 import 'package:pertemuan9/ui/splash.dart';
 import 'package:pertemuan9/utils/routes.dart';
+import 'bloc/register/register_cubit.dart';
 import 'firebase_options.dart';
-
-
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,13 +23,14 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (context) => LoginCubit()),
+        BlocProvider(create: (context) => RegisterCubit())
       ],
       child: MaterialApp(
         title: "Praktikum 9",
         debugShowCheckedModeBanner: false,
         navigatorKey: NAV_KEY,
         onGenerateRoute: generateRoute,
-        home: const SplashScreen(),
+        home: SplashScreen(),
       ),
     );
   }
