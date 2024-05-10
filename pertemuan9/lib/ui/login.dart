@@ -41,38 +41,53 @@ class _LoginScreenState extends State<LoginScreen> {
                 content: Text(state.msg),
                 backgroundColor: Colors.green,
               ));
-            Navigator.pushNamedAndRemoveUntil(
-                context, rHome, (route) => false);
+            Navigator.pushNamedAndRemoveUntil(context, rHome, (route) => false);
           }
         },
         child: Container(
           margin: EdgeInsets.symmetric(horizontal: 30, vertical: 70),
           child: ListView(
             children: [
-              Text("Login", style: TextStyle(
-                fontSize: 40, fontWeight: FontWeight.bold, color: Color(0xff3D4DE0)
-              ),),
-              SizedBox(height: 15,),
-              Text("Silahkan masukan e-mail dan password anda", style: TextStyle(
+              Text(
+                "Login",
+                style: TextStyle(
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xff3D4DE0)),
+              ),
+              SizedBox(
+                height: 15,
+              ),
+              Text(
+                "Silahkan masukan e-mail dan password anda",
+                style: TextStyle(
                   fontSize: 16,
-              ),),
-              SizedBox(height: 25,),
-              Text("e-mail", style: TextStyle(
-                fontSize: 16, fontWeight: FontWeight.bold
-              ),),
+                ),
+              ),
+              SizedBox(
+                height: 25,
+              ),
+              Text(
+                "e-mail",
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
               TextFormField(
                 controller: emailEdc,
               ),
-              SizedBox(height: 10,),
-              Text("password", style: TextStyle(
-                  fontSize: 16, fontWeight: FontWeight.bold
-              ),),
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                "password",
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
               TextFormField(
                 controller: passEdc,
                 decoration: InputDecoration(
-
                   suffixIcon: IconButton(
-                    icon: Icon(passInvisible ? Icons.visibility : Icons.visibility_off),
+                    icon: Icon(passInvisible
+                        ? Icons.visibility
+                        : Icons.visibility_off),
                     onPressed: () {
                       setState(() {
                         passInvisible = !passInvisible;
@@ -82,36 +97,73 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 obscureText: !passInvisible,
               ),
-              SizedBox(height: 50,),
-              ElevatedButton(onPressed: (){
-                context
-                    .read<LoginCubit>()
-                    .login(email: emailEdc.text, password: passEdc.text);
-              },
+              SizedBox(
+                height: 50,
+              ),
+              ElevatedButton(
+                  onPressed: () {
+                    context
+                        .read<LoginCubit>()
+                        .login(email: emailEdc.text, password: passEdc.text);
+                  },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xff3D4DE0),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10)
-                    )
-                  ),
-                  child: Text("Login", style: TextStyle(
-                    fontWeight: FontWeight.bold, fontSize: 24, color: Colors.white
-                  ),)),
-              SizedBox(height: 25,),
+                      backgroundColor: Color(0xff3D4DE0),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10))),
+                  child: Text(
+                    "Login",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24,
+                        color: Colors.white),
+                  )),
+              const SizedBox(
+                height: 30.0,
+              ),
               Row(
-                    mainAxisAlignment: MainAxisAlignment.center, // Menengahkan elemen horizontal
-                    children: [
-                      Text("Belum punya akun ?"),
-                      TextButton(onPressed: (){
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  GestureDetector(
+                    onTap: () {},
+                    child: const CircleAvatar(
+                      radius: 20.0,
+                      backgroundImage: NetworkImage(
+                          'https://img2.pngdownload.id/20190228/qby/kisspng-google-logo-google-account-g-suite-google-images-g-icon-archives-search-png-5c77ad39b77471.9286340315513470017515.jpg'),
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 30.0,
+                  ),
+                  GestureDetector(
+                    onTap: () {},
+                    child: const CircleAvatar(
+                      radius: 20.0,
+                      backgroundImage: NetworkImage(
+                          'https://freepngimg.com/thumb/business/83615-blue-icons-symbol-telephone-computer-logo.png'),
+                    ),
+                  )
+                ],
+              ),
+              SizedBox(
+                height: 25,
+              ),
+              Row(
+                mainAxisAlignment:
+                    MainAxisAlignment.center, // Menengahkan elemen horizontal
+                children: [
+                  Text("Belum punya akun ?"),
+                  TextButton(
+                      onPressed: () {
                         Navigator.pushNamed(context, '/register');
                       },
-                          child: Text("Daftar", style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            color: Color(0xff3D4DE0)
-                          ),))
-                    ],
+                      child: Text(
+                        "Daftar",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Color(0xff3D4DE0)),
+                      ))
+                ],
               )
-
             ],
           ),
         ),
