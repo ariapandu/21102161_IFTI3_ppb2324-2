@@ -9,12 +9,10 @@ class RegisterLoading extends RegisterState {}
 
 class RegisterSuccess extends RegisterState {
   final String msg;
-
   RegisterSuccess(this.msg);
 }
 
 class RegisterFailure extends RegisterState {
   final String msg;
-
   RegisterFailure(this.msg);
 }
