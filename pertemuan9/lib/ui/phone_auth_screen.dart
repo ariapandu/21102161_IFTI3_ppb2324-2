@@ -107,12 +107,10 @@ class _PhoneAuthScreenState extends State<PhoneAuthScreen> {
             MaterialButton(
               color: const Color(0xff3D4DE0),
               onPressed: () {
-                if (_phoneController.text.isNotEmpty) {
-                  if (otpVisibility) {
-                    verifyOTP();
-                  } else {
-                    loginWithPhone();
-                  }
+                if (otpVisibility) {
+                  verifyOTP();
+                } else {
+                  loginWithPhone();
                 }
               },
               child: Text(otpVisibility ? "Verify" : "Login",
