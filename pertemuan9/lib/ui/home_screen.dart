@@ -58,7 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
               children: snapshot.data!.docs.map((DocumentSnapshot document) {
                 Map<String, dynamic> data =
                     document.data()! as Map<String, dynamic>;
-                final titleEdc =
+                final titleEdc = 
                     TextEditingController(text: data['title'].toString());
                 final noteEdc =
                     TextEditingController(text: data['note'].toString());
@@ -82,7 +82,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                         fontWeight: FontWeight.w700,
                                         fontSize: 20.0)),
                               ),
-                              GestureDetector(
+                              GestureDetector( //Membuat tampilan edit dan hapus
                                   onTap: () {},
                                   child: PopupMenuButton<String>(
                                     onSelected: (value) {
