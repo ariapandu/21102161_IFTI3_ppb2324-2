@@ -58,7 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
               children: snapshot.data!.docs.map((DocumentSnapshot document) {
                 Map<String, dynamic> data =
                     document.data()! as Map<String, dynamic>;
-                final titleEdc = 
+                final titleEdc = //Membuat fitur edit dengan firebase
                     TextEditingController(text: data['title'].toString());
                 final noteEdc =
                     TextEditingController(text: data['note'].toString());
