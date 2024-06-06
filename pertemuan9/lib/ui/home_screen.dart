@@ -183,7 +183,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                               );
                                             });
                                       } else if (value == 'delete') {
-                                        String documentId = document.id;
+                                        String documentId = document.id; //Membuat fitur delete dengan firebase
                                         _firestore
                                             .collection('tasks')
                                             .doc(documentId)
